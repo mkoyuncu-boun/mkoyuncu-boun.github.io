@@ -22,7 +22,7 @@
 
 .lab-member {
   padding: 1.25em;
-  border: 1px solid $border-color;
+  border: 1px solid var(--global-border-color);
   border-radius: $border-radius;
 }
 
@@ -34,9 +34,22 @@
   margin-bottom: 0;
 }
 
+.lab-member__photo {
+  display: block;
+  width: 100%;
+  max-width: 10rem;
+  margin: 0 auto 1em;
+  border-radius: $border-radius;
+}
+
 .lab-member__role {
   margin-bottom: 0.25em;
   font-weight: bold;
+}
+
+.lab-section__empty {
+  color: var(--global-text-color-light);
+  font-style: italic;
 }
 
 .lab-member__tagline {
