@@ -30,7 +30,25 @@ sections:
             year: "2021"
 
   - category: "PhD Students"
-    members: []
+    members:
+      - id: "tufan-bayrak"
+        name: "Tufan Bayrak"
+        email: "tufan.bayrak@bogazici.edu.tr"
+        contact_email: "tufan.bayrakk@gmail.com"
 
   - category: "Master's & Undergraduate Researchers"
-    members: []
+    members:
+      - id: "erhun-cetiner"
+        name: "Erhun Çetiner"
+        email: "erhun.cetiner@bogazici.edu.tr"
+        contact_email: "erhun.cetiner@std.bogazici.edu.tr"
+
+      - id: "gokberk-iba"
+        name: "Gökberk İba"
+        email: "gokberk.iba@bogazici.edu.tr"
+        contact_email: "gokberkiba@gmail.com"
+
+      - id: "can-portakal"
+        name: "Can Portakal"
+        email: "can.portakal@bogazici.edu.tr"
+        contact_email: "canportakal35@gmail.com"

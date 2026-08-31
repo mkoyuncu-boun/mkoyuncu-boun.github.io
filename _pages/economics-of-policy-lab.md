@@ -31,9 +31,15 @@ author_profile: true
               <img class="lab-member__photo" src="{{ member.image | prepend: '/' | prepend: base_path }}" alt="{{ member.name }}" />
             {% endif %}
             <h3>{{ member.name }}</h3>
-            <p class="lab-member__role">{{ member.role }}</p>
-            <p class="lab-member__tagline">{{ member.tagline }}</p>
-            <p>{{ member.bio }}</p>
+            {% if member.role %}
+              <p class="lab-member__role">{{ member.role }}</p>
+            {% endif %}
+            {% if member.tagline %}
+              <p class="lab-member__tagline">{{ member.tagline }}</p>
+            {% endif %}
+            {% if member.bio %}
+              <p>{{ member.bio }}</p>
+            {% endif %}
             <p><a href="mailto:{{ member.contact_email | default: member.email }}">{{ member.email }}</a></p>
             {% if member.education %}
               <h4>Education</h4>
