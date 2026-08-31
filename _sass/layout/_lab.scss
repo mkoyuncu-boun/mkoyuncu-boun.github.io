@@ -1,0 +1,49 @@
+.lab-recruitment {
+  margin-bottom: 2em;
+  padding: 1.25em 1.5em;
+  border-left: 0.3em solid $primary-color;
+  background-color: mix(#fff, $primary-color, 94%);
+}
+
+.lab-recruitment h2,
+.lab-section > h2 {
+  margin-top: 0;
+}
+
+.lab-section {
+  margin-top: 2.5em;
+}
+
+.lab-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.25em;
+}
+
+.lab-member {
+  padding: 1.25em;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
+
+.lab-member > :first-child {
+  margin-top: 0;
+}
+
+.lab-member > :last-child {
+  margin-bottom: 0;
+}
+
+.lab-member__role {
+  margin-bottom: 0.25em;
+  font-weight: bold;
+}
+
+.lab-member__tagline {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.lab-member__education {
+  margin-bottom: 0;
+}

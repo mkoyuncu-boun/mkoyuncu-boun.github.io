@@ -11,9 +11,12 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "EPoLab"
+    url: /economics-of-policy-lab/
+
   - title: "Teaching"
     url: /teaching/    
-    
+
   - title: "CV"
     url: /cv/
     
