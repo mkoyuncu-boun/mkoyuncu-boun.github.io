@@ -1,0 +1,22 @@
+---
+layout: archive
+title: "Working Papers & Works in Progress"
+permalink: /working-papers/
+author_profile: true
+---
+
+{% include base_path %}
+
+<h2>Working Papers</h2><hr />
+{% for post in site.publications reversed %}
+  {% if post.category == "working_papers" and post.venue != "In progress" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Works in Progress</h2><hr />
+{% for post in site.publications reversed %}
+  {% if post.category == "working_papers" and post.venue == "In progress" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
