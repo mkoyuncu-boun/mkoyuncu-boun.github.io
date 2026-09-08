@@ -9,9 +9,14 @@ author_profile: true
 
 <h2>Working Papers</h2><hr />
 <ul>
+{% assign featured_paper = site.publications | where: "permalink", "/publication/2025-05-02-from-elected-to-appointed-local-authoritarian-takeovers" | first %}
+{% if featured_paper %}
+  {% assign post = featured_paper %}
+  {% include publication-list-item.html %}
+{% endif %}
   <li>Unexpected Work Incentives: How Cash Transfers Raise Refugee Men's Labor Supply (with A. Hızıroğlu Aygün, M.G. Kırdar, and Q. Stoeffler). <a href="https://www.rfberlin.com/network-paper/unexpected-work-incentives-how-cash-transfers-raise-refugee-mens-labor-supply/">Download link</a></li>
 {% for post in site.publications reversed %}
-  {% if post.category == "working_papers" and post.venue != "In progress" %}
+  {% if post.category == "working_papers" and post.venue != "In progress" and post.permalink != "/publication/2025-05-02-from-elected-to-appointed-local-authoritarian-takeovers" %}
     {% include publication-list-item.html %}
   {% endif %}
 {% endfor %}
