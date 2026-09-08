@@ -5,7 +5,7 @@
     {% assign coauthors = author_year | replace: 'Koyuncu, M., ', '' | replace: 'Koyuncu, M. &amp; ', '' | replace: 'Koyuncu, M. ', '' | strip %}
     <span>{{ post.title }}</span>
     {% if coauthors != '' %}
-      (with coauthors {{ coauthors }})
+      (with {{ coauthors }})
     {% endif %}
     . {{ citation_parts[2] | replace: '<i>', '<strong><em>' | replace: '</i>', '</em></strong>' | strip }}
   {% elsif post.citation %}
