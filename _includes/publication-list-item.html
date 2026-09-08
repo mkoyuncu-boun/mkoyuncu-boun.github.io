@@ -3,11 +3,7 @@
   {% if citation_parts.size > 2 %}
     {% assign author_year = citation_parts[0] | split: ' (' | first | strip %}
     {% assign coauthors = author_year | replace: 'Koyuncu, M., ', '' | replace: 'Koyuncu, M. &amp; ', '' | replace: 'Koyuncu, M. ', '' | strip %}
-    <span>{{ post.title }}</span>
-    {% if coauthors != '' %}
-      (with {{ coauthors }})
-    {% endif %}
-    . {{ citation_parts[2] | replace: '<i>', '<strong><em>' | replace: '</i>', '</em></strong>' | strip }}
+    <span>{{ post.title }}</span>{% if coauthors != '' %} (with {{ coauthors }}){% endif %}. {{ citation_parts[2] | replace: '<i>', '<strong><em>' | replace: '</i>', '</em></strong>' | strip }}
   {% elsif post.citation %}
     {{ post.title }}. {{ post.venue }}.
   {% else %}
