@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Download full CV (PDF)]({{ base_path }}/files/Koyuncu_CV.pdf)
+[Download full CV (PDF)]({{ base_path }}/files/Koyuncu_CV_Sept26.pdf)
 
 Current Position
 ======
@@ -26,4 +26,3 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-
