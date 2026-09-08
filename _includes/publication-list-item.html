@@ -1,0 +1,10 @@
+<li>
+  {% if post.citation %}
+    {{ post.citation }}
+  {% else %}
+    {{ post.title }}
+  {% endif %}
+  {% if post.paperurl %}
+    <a href="{{ post.paperurl }}">Download</a>
+  {% endif %}
+</li>

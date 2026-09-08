@@ -8,15 +8,19 @@ author_profile: true
 {% include base_path %}
 
 <h2>Working Papers</h2><hr />
+<ul>
 {% for post in site.publications reversed %}
   {% if post.category == "working_papers" and post.venue != "In progress" %}
-    {% include archive-single.html show_excerpt=false show_venue=false %}
+    {% include publication-list-item.html %}
   {% endif %}
 {% endfor %}
+</ul>
 
 <h2>Works in Progress</h2><hr />
+<ul>
 {% for post in site.publications reversed %}
   {% if post.category == "working_papers" and post.venue == "In progress" %}
-    {% include archive-single.html show_excerpt=false show_venue=false %}
+    {% include publication-list-item.html %}
   {% endif %}
 {% endfor %}
+</ul>
